@@ -1,4 +1,4 @@
-const accountId = 144553  //we use const when we don't want to change the values later onn.
+const accountId = 144553  //we use const when we don't want to change the values later on.
 let accountEmail = "random@gmail.com"
 var accountPassword = "12345"
 accountCity = "Delhi"
