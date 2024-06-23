@@ -21,8 +21,11 @@
 // console.log(Math.abs(-4));
 // console.log(Math.round(4.4));
 // console.log(Math.round(4.7));
+
 // console.log(Math.ceil(4.1)); // takes the upper value even if it's a bit bigger
+
 // console.log(Math.floor(4.9)); // takes the lower value even if it's a bit smaller
+
 // console.log(Math.min(24, 39, 79, 52));
 // console.log(Math.max(24, 39, 79, 52));
 
