@@ -54,3 +54,25 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+
+const course = {
+    courseName : "js in hindi",
+    price: "990",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course // courseInstructor kaafi long name tha toh de-structure kar diya,  
+
+// console.log(courseInstructor);
+// console.log(instructor);
+
+// API Structure
+
+// {
+//     "instructor": "hitesh",
+//     "courseName" : "js in hindi",
+//     "price": "free"
+// }
