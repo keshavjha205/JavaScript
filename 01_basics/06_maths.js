@@ -18,10 +18,11 @@
 //+++++++++++++++++  Maths  ++++++++++++++++++++++++++
 
 // console.log(Math);
+// console.log(Math.PI);
 // console.log(Math.abs(-4));
 // console.log(Math.round(4.4));
 // console.log(Math.round(4.7));
-
+// console.log(Math.pow(5, 2)); //It's read as two to the power 5.
 // console.log(Math.ceil(4.1)); // takes the upper value even if it's a bit bigger
 
 // console.log(Math.floor(4.9)); // takes the lower value even if it's a bit smaller
