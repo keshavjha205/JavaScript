@@ -17,10 +17,31 @@
         document.querySelector('.language').appendChild(li)
     }
 
-    // addLanguage("java")
-    // addLanguage("pyton")
-    // addLanguage("cpp")
+    addLanguage("java")
+    addLanguage("pyton")
+    addLanguage("cpp") 
 
-    
+    function addOptiLanguage(langName){
+       const li=  document.createElement('li');
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //Edit
+    const secLang = document.querySelector("li:nth-child(2)");
+    // secLang.innerHTML = "Mojo"
+
+    const newli = document.createElement("li")
+    newli.textContent = "Mojo"
+    secLang.replaceWith(newli)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML ='<li>TypeScript</li>'
+
+     //remove
+     const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
 </script>
 </html>
