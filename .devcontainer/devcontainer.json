@@ -20,7 +20,7 @@
 			"extensions": [
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
-				"ritwickdey.LiveServer"
+				
 			],
 			"settings": {
 				"editor.fontSize": 18,
