@@ -22,7 +22,7 @@
 <script>
     // document.getElementById("owl").onclick = function(){
     //     alert("Owl clicked");
-    // #not the best tarika to use events
+    // // #not the best tarika to use events
     // }
     
     //attachEvent()
@@ -33,10 +33,40 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+
+    // event propogation ya bubbling, phle inside ka element activate hoga phir ouside ka; just like a bubble andr se bahar
+    document.getElementById('images').addEventListener('click', function(e){
+       console.log("clicked inside the ul");    
+    }, false) // false default hota hai isliye lagana na-lagana ek hi baat hoti hai..
+
+
     document.getElementById('owl').addEventListener('click', function(e){
-       console.log(e);    
+       console.log("owl clicked");
+       e.stopPropagation()    
     }, false)
 
-    
+
+    //..false wale case m jo ki default case h isme pehle clicked owl print hoga phir clicked inside the ul
+    //..agr true likh denge false ki jgh jise "capturing" kehte hai toh usme pehle clicked inside the ul phir clicked owl print hoga(bahar se andr) 
+     //...'stopPropogation() use krenge toh code inside element pr hi ruk jaega bhr wala print nhi hoga'(means bubble nahi hoga)
+
+     document.getElementById("google").addEventListener('click', function(e){
+         e.preventDefault()
+         e.stopPropagation()
+        console.log("Google clicked");    
+     }, false)
+
+
+     document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt)
+     }, false)
+
+
 </script>
 </html>
