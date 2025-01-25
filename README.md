@@ -1,2 +1,2 @@
-# js_chai_aur_code
+# JavaScript
 A code repo for javascript.
