@@ -1,5 +1,8 @@
 // for of
 
+// ["", "", ""]
+// [{}, {}, {}]
+
 const arr = [1, 2, 3, 4, 5];
 
 for (const num of arr) {
@@ -23,7 +26,7 @@ map.set('IN', "India")
 // console.log(map);
 
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    console.log(key, 'stands for', value);
 }
 
 const myObject = {
@@ -32,6 +35,6 @@ const myObject = {
 }
 
 for (const [key, value] of myObject) {
-    console.log(key, ':-', value);
+    // console.log(key, ':-', value);
     
-}
+} //Objects for of loop me iterable nahi hote hai, iske liye alag cheeje hai

@@ -28,8 +28,8 @@ const myCoding = [
         languageFileName: "java"
     },
     {
-        languageName: "python",
-        languageFileName: "py"
+        languageName: "c",
+        languageFileName: "c"
     },
 ]
 
